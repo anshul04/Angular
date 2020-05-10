@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ComponentTestComponent } from './component-test/component-test.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
+import { ServiceLearningComponent } from './service-learning/service-learning.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ComponentTestComponent,
+    InterpolationComponent,
+    ServiceLearningComponent
   ],
   imports: [
     BrowserModule,
