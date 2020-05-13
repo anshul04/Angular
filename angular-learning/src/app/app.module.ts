@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { ComponentTestComponent } from './component-test/component-test.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ServiceLearningComponent } from './service-learning/service-learning.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeService } from './employee.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentTestComponent,
     InterpolationComponent,
-    ServiceLearningComponent
+    ServiceLearningComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
