@@ -3,8 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-service-learning',
   template: `
-    
-    
+    <h2>Employee List:</h2>
+    <ul *ngFor= "let emp of employees">
+      <li>{{emp.id}}. {{emp.name}} - {{emp.age}}</li>
+    </ul>
   `,
   styleUrls: ['./service-learning.component.css']
 })
