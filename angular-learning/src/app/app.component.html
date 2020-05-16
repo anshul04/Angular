@@ -2,7 +2,16 @@
   <h1> Welcome to {{title}}!!!</h1>
     <!-- <app-component-test></app-component-test> -->
 </div>
+<div style="color: blue; text-align: center">
+  <h2>Routing and navigation</h2>
+</div>
+<nav>
+  <a routerLink="/Departments" routerLinkActive = "active">Departments</a>&nbsp;
+  <a routerLink="/Students" routerLinkActive = "active">Students</a>
+</nav>
 <!-- <app-interpolation></app-interpolation> -->
 <!-- <app-service-learning></app-service-learning> -->
-<app-employee-list></app-employee-list>
-<app-employee-details></app-employee-details>
+<!-- <app-employee-list></app-employee-list>
+<app-employee-details></app-employee-details> -->
+<router-outlet></router-outlet>
+<!-- Routed views go here-->

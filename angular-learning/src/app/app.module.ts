@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentTestComponent } from './component-test/component-test.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -10,6 +10,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeService } from './employee.service';
 import { HttpClientModule} from '@angular/common/http';
+// import { DepartmentListComponent } from './department-list/department-list.component';
+// import { StudentListComponent } from './student-list/student-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { HttpClientModule} from '@angular/common/http';
     InterpolationComponent,
     ServiceLearningComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    routingComponents
+    // DepartmentListComponent,
+    // StudentListComponent
   ],
   imports: [
     BrowserModule,
