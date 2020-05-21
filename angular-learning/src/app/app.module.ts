@@ -11,6 +11,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeService } from './employee.service';
 import { HttpClientModule} from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 // import { DepartmentListComponent } from './department-list/department-list.component';
 // import { StudentListComponent } from './student-list/student-list.component';
 
@@ -23,7 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EmployeeListComponent,
     EmployeeDetailsComponent,
     routingComponents,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DepartmentDetailComponent
     // DepartmentListComponent,
     // StudentListComponent
   ],
