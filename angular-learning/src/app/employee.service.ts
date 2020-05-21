@@ -1,14 +1,17 @@
 import { IEmployee } from './employee';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
 
-  private _url: string = "/assets/data/employees.json";
+  //private _url: string = "/assets/data/employees.json";
+  private _url: string = "/assets/data/employees1.json";// to check error on browser
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +25,12 @@ export class EmployeeService {
   // }
 
   getEmployees(): Observable<IEmployee[]>{
-    return this.http.get<IEmployee[]>(this._url);
+    return this.http.get<IEmployee[]>(this._url)
+                    .pipe(catchError(this.erroHandler));
+  }
+
+  erroHandler(error: HttpErrorResponse) {
+    //return throwError('Finally, successfully caught error');
+    return throwError(error.message || 'server Error');
   }
 }
