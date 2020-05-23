@@ -8,3 +8,9 @@ nav a.active {
     color: black;
     width: fit-content;
 }
+
+.anchor {
+    background-color:darkgray;
+    border: 3px solid #777;
+    border-radius: 6px;
+  }
