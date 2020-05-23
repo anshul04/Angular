@@ -2,3 +2,9 @@
 nav a.active {
     color: blueviolet;
 }
+
+.items li.selected {
+    background-color: blue;
+    color: black;
+    width: fit-content;
+}
