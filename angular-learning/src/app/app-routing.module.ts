@@ -10,9 +10,9 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
 const routes: Routes = [
   //{path : '', component : DepartmentListComponent},
   //{path : '', redirectTo : '/Departments', pathMatch : 'prefix '}, //check the url by prfix the values
-  {path : '', redirectTo : '/Departments', pathMatch : 'full'}, //check full url is present or not
-  {path : 'Departments', component : DepartmentListComponent},
-  {path : 'Departments/:id', component : DepartmentDetailComponent}, //:id is the placeholder for the route component
+  {path : '', redirectTo : '/Departments-list', pathMatch : 'full'}, //check full url is present or not
+  {path : 'Departments-list', component : DepartmentListComponent},
+  {path : 'Departments-list/:id', component : DepartmentDetailComponent}, //:id is the placeholder for the route component
   {path : 'Students', component : StudentListComponent},
   {path : 'Employee', component : EmployeeListComponent},
   {path : "**", component : PageNotFoundComponent}
