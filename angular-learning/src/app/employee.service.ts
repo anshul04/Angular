@@ -10,8 +10,8 @@ import { Observable, throwError } from 'rxjs';
 })
 export class EmployeeService {
 
-  //private _url: string = "/assets/data/employees.json";
-  private _url: string = "/assets/data/employees1.json";// to check error on browser
+  private _url: string = "/assets/data/employees.json";
+  //private _url: string = "/assets/data/employees1.json";// to check error on browser
 
   constructor(private http: HttpClient) { }
 

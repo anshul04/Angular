@@ -8,7 +8,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { ServiceLearningComponent } from './service-learning/service-learning.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import { EmployeeService } from './employee.service';
+//import { EmployeeService } from './employee.service';//if we are using privedIn in service ts.
 import { HttpClientModule} from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
@@ -38,7 +38,7 @@ import { DepartmentContactComponent } from './department-contact/department-cont
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  //providers: [EmployeeService], //new syntax for providedIn in employee.service.ts
   bootstrap: [AppComponent]
 })
 export class AppModule { }
